@@ -32,7 +32,7 @@ const GUESTS = [
 
 window.addEventListener('load', (event) => {
     let guest = location.search.substring(1);
-    if (GUESTS.find(element => element === guest) != undefined) {
+    if (GUESTS.find(element => element === guest) !== undefined) {
         nameLabel.innerText = atob(guest);
     } else {
         // window.open('', '_self');
